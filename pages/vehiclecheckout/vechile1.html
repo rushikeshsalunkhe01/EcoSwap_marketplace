@@ -7,10 +7,13 @@
     <title>Vechile 1</title>
 </head>
 <body>
-    <div class="img-container">
-        <img src="./../../img/vehiclecheckoutimg/vehicle1.jfif" id="cover-img"/>
-        <img src="./../../img/vehiclecheckoutimg/back-arrow.png" class="img-back img-same" onclick="back()"/>
-        <img src="./../../img/vehiclecheckoutimg/next-arrow.png" class="img-next img-same" ondblclick="next()"/>
+    <div class="main-container">
+        <div class="img-container">
+            <img src="./../../img/vehiclecheckoutimg/vehicle1.jfif" id="cover-img"/>
+         </div>
+         <img src="./../../img/vehiclecheckoutimg/back-arrow.png" class="img-back img-same" onclick="back()"/>
+         <img src="./../../img/vehiclecheckoutimg/next-arrow.png" class="img-next img-same" ondblclick="next()"/>
+    
     </div>
     <script> 
         const slide = document.getElementById('cover-img');
@@ -19,7 +22,7 @@
                     "./../../img/vehiclecheckoutimg/v3.jfif",
                     "./../../img/vehiclecheckoutimg/v4.jfif",
                     "./../../img/vehiclecheckoutimg/v5.jfif",
-                "./../../img/vehiclecheckoutimg/v6",];
+                "./../../img/vehiclecheckoutimg/v6.jfif",];
         let index = 0;
 
         function next() {

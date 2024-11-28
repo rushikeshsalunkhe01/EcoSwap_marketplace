@@ -108,4 +108,17 @@
     color: #2c3e50;
     margin-bottom: 13px;
 }
+.Overview-cont{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 70px;
+    line-height: 24px;
+}
+.overview-img{
+    height: 50px;
+    margin-right: 5px;
+}
+.main-overview-container{
+    display: flex;
+}
 

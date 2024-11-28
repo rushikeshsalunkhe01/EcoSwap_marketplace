@@ -4,6 +4,9 @@
     overflow: hidden;
     text-align: center;
     height: 500px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .img-container {
     width: 100%;
@@ -38,3 +41,55 @@
     transition: 0.5s;
     transform: translateY(-50%);
 }
+.vehicle-description{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+
+}
+.vehicle-div-1{
+    flex-direction: column;
+    
+}
+.vehicle-div-2{
+    background-color: rgb(59, 55, 54);
+    flex-direction: column;
+    
+}
+.vehicle-subdiv1{
+     height: 200px;
+    width: 770px;
+    margin-top: 13px;
+    border: 1px solid black;
+
+}
+.vehicle-subdiv2{
+    border: 1px solid black;
+    height: 200px;
+    width: 770px;
+    margin-top: 13px;
+
+
+    
+}
+.vehicle-subdiv3{
+    border: 1px solid black;
+    height: 550px;
+    width: 770px;
+    margin-top: 13px;
+
+
+    
+}
+.vehicle-subdiv5{
+    border: 1px soild black;
+
+    
+}
+.vehicle-subdiv6{
+    border: 1px soild black;
+
+    
+}
+

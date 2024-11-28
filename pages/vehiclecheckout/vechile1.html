@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../css/vehiclecheckout.css"/>
     <title>Vechile 1</title>
 </head>
 <body>
     <div class="img-container">
         <img src="./../../img/vehiclecheckoutimg/vehicle1.jfif" id="cover-img"/>
-        <img src="./../../img/vehiclecheckoutimg/back-arrow.jfif" class="img-back img-same"/>
-        <img src="./../../img/vehiclecheckoutimg/next-arrow.jfif" class="img-back img-same"/>
-
+        <img src="./../../img/vehiclecheckoutimg/back-arrow.png" class="img-back img-same" onclick="back()"/>
+        <img src="./../../img/vehiclecheckoutimg/next-arrow.png" class="img-next img-same" ondblclick="next()"/>
     </div>
-    <script>
-      const slide=document.getElementById('cover-img');
-      const img=["vehicle1.jfif","v2.jfif","v3.jfif","v4.jfif","v5.jfif","v6.jfif"];
-      let index=0;
+    <script> 
+        const slide = document.getElementById('cover-img');
+        const img = ["./../../img/vehiclecheckoutimg/vehicle1.jfif",
+                    "./../../img/vehiclecheckoutimg/v2.jfif",
+                    "./../../img/vehiclecheckoutimg/v3.jfif",
+                    "./../../img/vehiclecheckoutimg/v4.jfif",
+                    "./../../img/vehiclecheckoutimg/v5.jfif",
+                "./../../img/vehiclecheckoutimg/v6",];
+        let index = 0;
 
-       function goNext(){
-        if(index<img.length - 1){
-            index++;
+        function next() {
+            if (index < img.length - 1) {
+                index++;
+            } else {
+                index = 0;
+            }
+            slide.src = img[index];
         }
-        else{
-            index=0
-        }
-        slide.src=img[index];
-       }
 
-       function goBack(){
-        if(index>0){
-            index--;
+        function back() {
+            if (index > 0) {
+                index--;
+            } else {
+                index = img.length - 1;
+            }
+            slide.src = img[index];
         }
-        else{
-            index=img.length-1;
-        }
-        slide.src=img[index];
-       }
-
-       setInterval(goNext,2000);
-
     </script>
+
     
 </body>
 </html>

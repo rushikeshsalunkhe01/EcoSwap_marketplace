@@ -1,0 +1,32 @@
+
+#cover-img {
+    height: 550px;
+    width: 1325px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img-container {
+    margin: 30px auto;
+    width: fit-content;
+    position: relative;
+}
+.img-back {
+    left: 0;
+}
+.img-back:hover {
+    transform: scale(0.8) translateX(-15px);
+}
+.img-next {
+    right: 0;
+}
+.img-next:hover {
+    transform: scale(0.8) translateX(15px);
+}
+.img-same {
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-50%);
+}

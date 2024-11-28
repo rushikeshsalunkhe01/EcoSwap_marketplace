@@ -16,6 +16,7 @@
       const slide=document.getElementById('cover-img');
       const img=["vehicle1.jfif","v2.jfif","v3.jfif","v4.jfif","v5.jfif","v6.jfif"];
       let index=0;
+
        function goNext(){
         if(index<img.length - 1){
             index++;
@@ -25,6 +26,18 @@
         }
         slide.src=img[index];
        }
+
+       function goBack(){
+        if(index>0){
+            index--;
+        }
+        else{
+            index=img.length-1;
+        }
+        slide.src=img[index];
+       }
+
+       setInterval(goNext,2000);
 
     </script>
     

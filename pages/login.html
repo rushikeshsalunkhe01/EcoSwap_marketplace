@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login with Forgot Password and Registration</title>
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f2a2c3, #a8c7f7); /* Soft gradient background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 400px;
+      transition: all 0.3s ease;
+    }
+
+    .container:hover {
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Hover effect for container */
+    }
+
+    h2 {
+      text-align: center;
+      color: #4e8c5a; /* Vibrant green color */
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #4e8c5a;
+      outline: none;
+    }
+
+    .form-group a {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #4e8c5a;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .form-group a:hover {
+      color: #2f6042;
+      text-decoration: underline;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #4e8c5a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2f6042; /* Darker green on hover */
+    }
+
+    .toggle-password {
+      cursor: pointer;
+      font-size: 14px;
+      color: #4e8c5a;
+    }
+
+    .toggle-password:hover {
+      text-decoration: underline;
+    }
+
+    #reset-section, #registration-section {
+      display: none;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Login Section -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope icon"></i>Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password"><i class="fas fa-lock icon"></i>Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <span class="toggle-password" id="toggle-password"><i class="fas fa-eye"></i></span>
+        </div>
+        <div class="form-group">
+          <a id="forgot-password-link" href="#">Forgot Password?</a>
+          <a id="register-link" href="#">Don't have an account? Register</a>
+        </div>
+        <button type="submit" class="btn"><i class="fas fa-sign-in-alt icon"></i>Login</button>
+      </form>
+    </div>
+
+    <!-- Reset Password Section -->
+    <div id="reset-section">
+      <h2>Reset Password</h2>
+      <form id="reset-form">
+        <div class="form-group">
+          <label for="reset-email"><i class="fas fa-envelope icon"></i>Email</label>
+          <input type="email" id="reset-email" placeholder="Enter your registered email" required>
+        </div>
+        <button type="submit" class="btn"><i class="fas fa-paper-plane icon"></i>Reset Password</button>
+        <a id="back-to-login" href="#">Back to Login</a>
+      </form>
+    </div>
+
+    <!-- Registration Section -->
+    <div id="registration-section">
+      <h2>Register</h2>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="reg-email"><i class="fas fa-envelope icon"></i>Email</label>
+          <input type="email" id="reg-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-password"><i class="fas fa-lock icon"></i>Password</label>
+          <input type="password" id="reg-password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password"><i class="fas fa-lock icon"></i>Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit" class="btn"><i class="fas fa-user-plus icon"></i>Register</button>
+        <a id="back-to-login-from-register" href="#">Back to Login</a>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Variables
+    const loginSection = document.getElementById('login-section');
+    const resetSection = document.getElementById('reset-section');
+    const registrationSection = document.getElementById('registration-section');
+    const forgotPasswordLink = document.getElementById('forgot-password-link');
+    const registerLink = document.getElementById('register-link');
+    const backToLogin = document.getElementById('back-to-login');
+    const backToLoginFromRegister = document.getElementById('back-to-login-from-register');
+    const resetForm = document.getElementById('reset-form');
+    const loginForm = document.getElementById('login-form');
+    const registeredEmail = "user@example.com"; // Simulated registered email
+    const registeredPassword = "password123"; // Simulated registered password
+    const togglePassword = document.getElementById('toggle-password');
+    const passwordInput = document.getElementById('password');
+    const regPasswordInput = document.getElementById('reg-password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+
+    // Functionality: Toggle Password Visibility
+    togglePassword.addEventListener('click', () => {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+      } else {
+        passwordInput.type = 'password';
+        togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
+      }
+    });
+
+    // Show Reset Password Section
+    forgotPasswordLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      loginSection.style.display = 'none';
+      resetSection.style.display = 'block';
+    });
+
+    // Show Registration Section
+    registerLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      loginSection.style.display = 'none';
+      registrationSection.style.display = 'block';
+    });
+
+    // Back to Login Section (from Reset)
+    backToLogin.addEventListener('click', (e) => {
+      e.preventDefault();
+      resetSection.style.display = 'none';
+      loginSection.style.display = 'block';
+    });
+
+    // Back to Login Section (from Registration)
+    backToLoginFromRegister.addEventListener('click', (e) => {
+      e.preventDefault();
+      registrationSection.style.display = 'none';
+      loginSection.style.display = 'block';
+    });
+
+    // Reset Password Functionality
+    resetForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const resetEmail = document.getElementById('reset-email').value.trim();
+
+      if (resetEmail === registeredEmail) {
+        alert('A password reset link has been sent to your email.');
+        resetSection.style.display = 'none';
+        loginSection.style.display = 'block';
+      } else {
+        alert('Email not registered.');
+      }
+    });
+
+    // Registration Form Submission
+        // Registration Form Submission
+    registrationForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const regEmail = document.getElementById('reg-email').value.trim();
+      const regPassword = regPasswordInput.value.trim();
+      const confirmPassword = confirmPasswordInput.value.trim();
+
+      if (regPassword !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return;
+      }
+
+      if (regEmail && regPassword) {
+        alert('Registration successful!');
+        registrationSection.style.display = 'none';
+        loginSection.style.display = 'block';
+      } else {
+        alert('Please fill out all fields.');
+      }
+    });
+
+    // Login Form Submission
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value.trim();
+      const password = passwordInput.value.trim();
+
+      if (email === registeredEmail && password === registeredPassword) {
+        alert('Login successful!');
+        // Redirect to dashboard or another page (optional)
+      } else {
+        alert('Invalid email or password.');
+      }
+    });
+  </script>
+</body>
+</html>

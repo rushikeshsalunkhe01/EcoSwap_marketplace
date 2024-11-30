@@ -110,6 +110,20 @@
     padding: 5px;
 }
 
+/* hero section ********************/
+
+.slider-img{
+  width: 900px;
+  height: 250px;
+  margin-left: 200px;
+}
+.slider-main{
+  margin: 50px auto;
+}
+
+
+
+
 /* main-section */
 
 .home-section{

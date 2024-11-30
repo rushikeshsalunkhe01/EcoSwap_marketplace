@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design form page
-
-    </title>
+    <title>Design form page</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Design Page</h1>
+  <header>
+    <div class="navbar">
+        <div class="logo-box">
+            <h2 class="logo">EcoSwap</h2>
+        </div>
+        <div class="select-location-container">
+            <select name="select location" id="select-option">
+                <option>Select Location</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Goa">Goa</option>
+            </select>
+        </div>
+        <div class="product-search-container">
+            <input type="text" class="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+        </div>
+        <div class="select-language-contaiiner">
+            <select id="select-language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="product-sell-box">
+            <button class="sell-product-btn">
+             <i class="fa-solid fa-plus sell-icon"></i>
+                SELL
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <i class="fa-regular fa-user profile-img" ></i>
+        </div>
+        
+    </div>
+
+    <!-- sub-navbar ----------------------------------------------------->
+
+    <div class="sub-navbar">
+          <div class="navbar-pages-container">
+            <div class="vehicals-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Vahicals : Bike & Car & Scooter</a></p>
+            </div>
     
-</body>
+            <div class="RealEtate-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+            </div>
+    
+            <div class="Electronics-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone & Laptop & Tablet</a></p>
+            </div>
+          </div>
+    </div>
+
+  </header>
+  </body>
 </html>
 

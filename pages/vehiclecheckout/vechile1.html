@@ -280,60 +280,75 @@
             </div>
         </div>
     </div>
-
-
-    
-
+</div>
 
     
-    <script> 
-        const slide = document.getElementById('cover-img');
-        const img = ["./../../img/vehiclecheckoutimg/vehicle1.jfif",
-                    "./../../img/vehiclecheckoutimg/v2.jfif",
-                    "./../../img/vehiclecheckoutimg/v3.jfif",
-                    "./../../img/vehiclecheckoutimg/v4.jfif",
-                    "./../../img/vehiclecheckoutimg/v5.jfif",
-                "./../../img/vehiclecheckoutimg/v6.jfif",];
-        let index = 0;
-
-        function next() {
-            if (index < img.length - 1) {
-                index++;
-            } else {
-                index = 0;
-            }
-            slide.src = img[index];
-        }
-
-        function back() {
-            if (index > 0) {
-                index--;
-            } else {
-                index = img.length - 1;
-            }
-            slide.src = img[index];
-        }
-        setInterval(next, 5000);
 
 
+    <footer>
+        <div class="footer-section">
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">Popular Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Mumbai</a>
+              <a href="#" class="anchor-style">Nagpur</a>
+              <a href="#" class="anchor-style">Pune</a>
+              <a href="#" class="anchor-style">Chennai</a>
+            </div>
+          </div>
+          
+          <div class="trending-locations">
+            <h2 class="footer-heading-style">Trending Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style"> Bhubaneshwar</a>
+              <a href="#" class="anchor-style"> Hyderabad </a>
+              <a href="#" class="anchor-style">Chandigarh</a>
+              <a href="#" class="anchor-style"> Nashik</a>
+            </div>
+          </div>
+    
+          <div class="about-us">
+            <h2 class="footer-heading-style">About Us</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Tech@EcoSwap</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">EcoSwap</h2>
+            <div class="site-about footer-anchor-style">
+              <a href="#" class="anchor-style">Blog</a>
+              <a href="#" class="anchor-style">Help</a>
+              <a href="#" class="anchor-style">Sitemap</a>
+              <a href="#" class="anchor-style">Legal & Privacy information</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h1 class="footer-heading-style">Follow Us</h1>
+            <div class="social-icons">
+              <i class="fa-brands fa-instagram footer-icon-style"></i>
+              <i class="fa-brands fa-facebook footer-icon-style"></i>
+              <i class="fa-brands fa-twitter footer-icon-style"></i>
+              <i class="fa-brands fa-linkedin footer-icon-style"></i>
+              <i class="fa-brands fa-youtube footer-icon-style"></i>
+            </div>
+          </div>
+    
+        </div>
+             <hr class="plane-line">
+             <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+      </footer>
+     
 
-       function openModel(type) {
-        const overlayEle = document.getElementById('overlay');
-        const messageModel = document.getElementById('message-model');
-        
-        overlayEle.style.display = "flex";
-        
-        if (type === 'message') {
-            messageModel.style.display = "block";
-        }
-    }
 
-    function closeModel() {
-        const overlayEle = document.getElementById('overlay');
-        overlayEle.style.display = "none";
-    }
 
-    </script>
+        <script src="./../../JavaScript/vehiclecheckout.js"></script>
+        <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+
+
+
 
     
 </body>

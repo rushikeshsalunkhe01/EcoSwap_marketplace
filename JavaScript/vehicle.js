@@ -16,3 +16,43 @@ function next() {
 setInterval(
     next,2000
 );
+
+function up(){
+    const sidebar = document.getElementById('sidebar-container');
+    const up = document.getElementById('up-arrow');
+    const down = document.getElementById('down-arrow');
+
+    down.style.visibility = 'visible'
+    sidebar.style.visibility = 'hidden';
+    up.style.visibility = 'hidden';
+}
+
+function down(){
+    const sidebar = document.getElementById('sidebar-container');
+    const up = document.getElementById('up-arrow');
+    const down = document.getElementById('down-arrow');
+
+    down.style.visibility = 'hidden'
+    sidebar.style.visibility = 'visible';
+    up.style.visibility = 'visible';
+}
+
+function uparrow(){
+    const sidebar = document.getElementById('sidebar-container2');
+    const up = document.getElementById('up-arrow2');
+    const down = document.getElementById('down-arrow2')
+
+    down.style.visibility = 'visible'
+    sidebar.style.visibility = 'hidden';
+    up.style.visibility = 'hidden';
+}
+
+function downarrow(){
+    const sidebar = document.getElementById('sidebar-container2');
+    const up = document.getElementById('up-arrow2');
+    const down = document.getElementById('down-arrow2')
+
+    down.style.visibility = 'hidden'
+    sidebar.style.visibility = 'visible';
+    up.style.visibility = 'visible';
+}

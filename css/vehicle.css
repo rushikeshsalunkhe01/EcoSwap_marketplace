@@ -41,6 +41,17 @@ a{
     
 }
 
+.angle-down {
+    margin-left: 120px;
+    font-size: 20px;
+    visibility: hidden;
+}
+.angle-up {
+    margin-left: -19px;
+    font-size: 20px;
+    visibility: visible;
+}
+
 .sub-category{
     margin-left: 19px;
 }

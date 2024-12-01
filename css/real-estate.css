@@ -121,6 +121,36 @@
 }
 
 
+/* hero section ********************/
+
+.hero-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 5px;
+  }
+  
+  .slider-img{
+    height: 400px;
+    height: 400px;
+  }
+  
+  .slider-main{
+      width: 80%;
+      height: 300px;
+      border-radius: 5px;
+      border-bottom: 20px solid #ccc;
+      background-color: #a2baca;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+  }
+
+
+
+
+
 
 /* footer section styling *****************************/
 

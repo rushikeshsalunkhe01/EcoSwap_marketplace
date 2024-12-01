@@ -1,0 +1,65 @@
+.home{
+    position: relative;
+
+}
+
+.style-p{
+    cursor: pointer;
+}
+
+.twocards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 350px;
+   
+}
+
+.sidebar{
+    position: absolute;
+    left:0px;
+    top: 50px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 10px;
+    width: 350px;
+    height: 100vh;
+   
+    
+}
+
+.sidebar-categories{
+    text-align: start;
+    margin: 10px;
+    margin-right: 80px;
+   
+
+}
+.angle-down {
+    margin-top: 15px;
+    font-size: 20px;
+    visibility: hidden;
+}
+.angle-up {
+    margin-top: 15px;
+    font-size: 20px;
+    visibility: visible;
+}
+
+.angle{
+    display: flex;
+}
+.sidebar-mobile{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin-left:30px ;
+    font-size: 15px;
+}
+.sidebar-mobile:hover{
+    background-color: rgb(165, 232, 232);
+    width:100%
+   
+}

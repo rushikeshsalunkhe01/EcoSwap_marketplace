@@ -15,8 +15,6 @@ function closeIcon() {
 }
 
 
-
-
 // slider-code
 
 let allimg  = [
@@ -37,3 +35,77 @@ function next() {
 setInterval(
     next,2000
 );
+
+
+//filter by location
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const selectBox = document.getElementById('select-option');
+
+    const cards = document.querySelectorAll('.product-card');
+
+    selectBox.addEventListener('change', function () {
+       
+        const selectedLocation = selectBox.value;
+
+        cards.forEach(card => {
+          
+            const cardLocation = card.querySelector('.product-location').textContent;
+
+            if (selectedLocation === "Select Location" || cardLocation.includes(selectedLocation)) {
+                card.style.display = "block"; 
+            } else {
+                card.style.display = "none"; 
+            }
+        });
+    });
+});
+
+
+//searching product
+
+const productInput = document.getElementById('product-search-input');
+const ProducTitle = document.querySelectorAll('.product-title');
+   
+    function searchProduct(){
+        const searchPro = productInput.value;
+
+        cards.forEach(card => {
+           // const cardTitle = card.querySelector('.product-title')
+
+        if(ProducTitle.includes(searchPro)){
+            
+            card.style.display = 'block';
+        }
+
+
+            
+        });
+
+    }
+
+
+//search product by name
+
+
+function searchProduct() {
+
+    const searchQuery = document.getElementById('product-search-input').value.toLowerCase();
+    
+
+    const productCards = document.querySelectorAll('.product-card');
+    
+
+    productCards.forEach(card => {
+
+        const productTitle = card.querySelector('.product-title').textContent.toLowerCase();
+        
+        if (productTitle.includes(searchQuery) && searchQuery !== "") {
+            card.style.display = 'block'; // Show the card
+        } else {
+            card.style.display = 'none'; // Hide the card
+        }
+    });
+}
+

@@ -8,6 +8,9 @@
 
 }
 
+.bold{
+    font-weight: bold;
+}
 
 /* navbar styling-------------------- */
 
@@ -105,21 +108,21 @@
     padding: 2px;
 }
 
+
 /* sub-navbar------------------------------------------ */
 
 .sub-navbar{
-    width: 100%; 
-    background-color: #fafafa;
-}
- 
- .navbar-pages-container{
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     width: 70%; 
-     padding: 5px;
+   width: 100%; 
+   background-color: #fafafa;
 }
 
+.navbar-pages-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%; 
+    padding: 5px;
+}
 
 /* hero section ********************/
 
@@ -147,8 +150,171 @@
      
   }
 
+/* REAL-ESTATE ************************************/
+
+.re-heading{
+    width: 80%;
+    margin: 100px;
+}
+
+.re-text{
+    font-size: 25px;
+}
+
+.realEstate-container{
+    display: flex;
+    margin: 40px;
+}
+
+.re-sub-container{
+    width: 500px;
+    padding-left: 30px;
+}
+
+#re-down-arrow{
+    height: 15px;
+    margin-left: 140px;
+    cursor: pointer;
+}
 
 
+#re-categories-subtext{
+    font-size: 12px;
+}
+/* 
+#re-categories-info{
+    visibility: hidden;
+} */
+
+.re-properties{
+    margin-left: 10px;
+    color: #516465;
+    font-size: 15px;
+}
+
+.re-sub-properties{
+    color: #516465;
+    font-size: 13.7px;
+    margin-left: 45px;
+    margin-top: 8px;
+}
+
+.re-sub-properties:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+
+.re-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1800px;
+}
+
+
+  
+/* product card styling ************************************/
+
+.product-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 350px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 40px; 
+    margin: 10px 10px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .product-image {
+    background: #ecf0f1; 
+    padding: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px; 
+  }
+  
+  .product-image img {
+    width: 100%; 
+    height: 100%; 
+    max-width: 320px; 
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+  }
+  
+  
+  .product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50; 
+    margin-bottom: 10px;
+  }
+  
+  .product-location {
+    font-size: 14px;
+    color: #7f8c8d; 
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-location i {
+    color: #e74c3c; 
+    margin-right: 5px;
+  }
+  
+  .product-description {
+    font-size: 15px;
+    color: #7f8c8d;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .product-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ecf0f1; 
+  }
+  
+  .product-price {
+    font-size: 20px;
+    color: #2ecc71; 
+    font-weight: bold;
+  }
+  
+  
+  .secondary-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+     background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* End ************************************/
 
 
 

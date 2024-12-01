@@ -29,6 +29,7 @@ a{
     position: relative;
     margin-bottom: 40px;
     border-radius: 16px;
+    margin-right: -25px;
 }
 .categories-container{
     margin-left: 10px;
@@ -43,6 +44,20 @@ a{
 .sub-category{
     margin-left: 19px;
 }
+
+.products-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 300px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e8ed;
+    margin-bottom: 40px; 
+    margin: 5px 15px;
+    margin-bottom: 40px;
+  }
 
 
 

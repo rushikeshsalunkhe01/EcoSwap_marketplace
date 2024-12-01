@@ -363,6 +363,9 @@
     .vehicle-subdiv1, .vehicle-subdiv2, .vehicle-subdiv3, .vehicle-subdiv5, .vehicle-subdiv6 {
         width: 100%;
     }
+    .vehicle-subdiv2{
+        height: 270px;
+    }
 
     .img-same {
         height: 30px;

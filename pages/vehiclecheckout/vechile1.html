@@ -197,7 +197,7 @@
                         <a href="https://g.co/kgs/X9dvMkT"><img src="./../../img/vehiclecheckoutimg/next2.png" style="height: 40px; margin-left: 20px; margin-top: 40px;"/></a>
                     </div>
                     <div>
-                        <button class="chat-with-seller"><b>Chat with seller</b></button>
+                        <button class="chat-with-seller" onclick="openModel('message')"><b>Chat with seller</b></button>
                     </div>
               </div>
     
@@ -210,6 +210,28 @@
             </div>
 
     </div>
+
+
+
+
+
+    
+    <div class="overlay" id="overlay">
+        <div class="model" id="message-model" style="display:none;">
+            <img src="./../../img/vehiclecheckoutimg/close.png" id="close" onclick="closeModel()"/>
+            <h3 class="send-msg-text">Send Message</h3>
+            <form class="form-container">
+                <input type="text" placeholder="Enter your name" class="form-ip"/>
+                <input type="text" placeholder="Enter your email" class="form-ip"/>
+                <input type="text" placeholder="Enter your message" class="form-ip"/>
+            </form>
+            <div class="form-btn">
+                <button class="send-btn" id="message">Send</button>
+            </div>
+        </div>
+    </div>
+
+
 
     <script> 
         const slide = document.getElementById('cover-img');
@@ -239,6 +261,24 @@
             slide.src = img[index];
         }
         setInterval(next, 5000);
+
+
+
+       function openModel(type) {
+        const overlayEle = document.getElementById('overlay');
+        const messageModel = document.getElementById('message-model');
+        
+        overlayEle.style.display = "flex";
+        
+        if (type === 'message') {
+            messageModel.style.display = "block";
+        }
+    }
+
+    function closeModel() {
+        const overlayEle = document.getElementById('overlay');
+        overlayEle.style.display = "none";
+    }
 
     </script>
 

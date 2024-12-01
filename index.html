@@ -5,16 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoSwap</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="navbar">
+     
+      <div class="sidedar-container">
+
+    <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+    <div class="side-bar" id="side-bar">
+      <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+
+      <div class="item" id="first-item">
+        <i class="fa-solid fa-user icon-style"></i>
+        <h3 class="item-name">Profile</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-brands fa-sellsy icon-style"></i>
+        <h3 class="item-name">Start Selling</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-credit-card icon-style"></i>
+        <h3 class="item-name">My ADS</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-tag icon-style"></i>
+        <h3 class="item-name">Select Language</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-brands fa-rocketchat icon-style"></i>
+        <h3 class="item-name">Chats</h3>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-headset icon-style"></i>
+        <h3 class="item-name">Help</h3>
+      </div>
+
+    </div>
+
+      </div>
+
+
         <div class="logo-box">
             <h2 class="logo">EcoSwap</h2>
         </div>
         <div class="select-location-container">
             <select name="select location" id="select-option">
-                 <option>Select Location</option>
+                <option>Select Location</option>
                 <option value="Nagpur">Nagpur</option>
                 <option value="Pune">Pune</option>
                 <option value="Mumbai">Mumbai</option>
@@ -50,60 +95,97 @@
     <div class="sub-navbar">
           <div class="navbar-pages-container">
             <div class="vehicals-page">
-                <p class="style-p">Vahicals : Bike & Car & Scooter</p>
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Vahicals : Bike <span class="in-product-style">& Car & Scooter</span></a></p>
             </div>
     
             <div class="RealEtate-page">
-                <p class="style-p">RealEtate : Houses & Apartments</p>
+                <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses<span class="in-product-style">& Apartments </span></a></p>
             </div>
     
             <div class="Electronics-page">
+
                 <p class="style-p"><a href="./pages/electronics.html/mobiles.html">Electronics : Smart Phone & Laptop & Tablet</a></p>
+
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone<span class="in-product-style"> & Laptop & Tablet</span></a></p>
+
             </div>
           </div>
     </div>
 
   </header>
 
+    <!-- hero-section --------------------------------->
+
+   <div class="hero-section">
+    <div class="slider-main">
+      <img src="./img/scooterbanner.png" alt="" class="slider-img" onclick="next()" id="new">
+  </div>
+   </div>
+
+     <!-- product-section-icons -->
+
+   <div class="product-main-head">
+    <div class="product-pages-container">
+      <div class="product-head-style">
+        <a href="#" class="sub-nav-anchor-product"><i class="fa-solid fa-car"></i></a>
+      </div>
+
+      <div class="product-head-style">
+        <a href="#" class="sub-nav-anchor-product"><i class="fa-solid fa-house"></i></a>
+      </div>
+
+      <div class="product-head-style">
+          <a href="#" class="sub-nav-anchor-product"><i class="fa-solid fa-laptop"></i></a>
+      </div>
+    </div>
+</div>
+
+
+
   <!-- Home Section -------------------------------------- -->
 
   <div class="home-section">
-    <h2 class="product-page-heading">Nagpur Free classifieds</h2>
+    <h2 class="product-page-heading">Fresh recommendations</h2>
    
     <div class="product-main-container">
 
-    <div class="product-info">
-
-        <div class="categories-section">
-        <h2 class="Categories-heading">Categories</h2>
-           <p>Vehicals</p>
-           <p>RealEtate</p>
-        </div>
-
-        <div class="categories-section">
-            <h2 class="Categories-heading">Locations</h2>
-               <p>Nagpur</p>
-               <p>Pune</p>
-            </div>
-
-    </div>
 
     <div class="products-card-container">
         
       <div class="product-card">
         <div class="product-image">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Product Image">
+          <img src="./img/iphone-pro-14.png" alt="Product Image">
         </div>
         <div class="product-details">
           <h2 class="product-title">Wireless Headphones</h2>
           <p class="product-location">
-            <i class="fa fa-map-marker"></i> Nagpur, MH
+            <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
           </p>
           <p class="product-description">
             Stylish and comfortable wireless headphones for a seamless audio experience.
           </p>
           <div class="product-information">
-            <span class="product-price">₹ 799.99</span>
+            <span class="product-price">₹ 899.99</span>
+            <button class="btn secondary-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./img/yamaha-cool-motorcycle.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Yamaha R15 V4</h2>
+          <p class="product-location">
+            <i class="fa fa-map-marker"></i> Pune, Maharashtra
+          </p>
+          <p class="product-description">
+            A sporty 155cc bike with sleek design and advanced features.
+          </p>
+          <div class="product-information">
+            <span class="product-price">₹ 100099.99</span>
             <button class="btn secondary-btn">View Details</button>
           </div>
         </div>
@@ -113,22 +195,87 @@
 
       <div class="product-card">
         <div class="product-image">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D" alt="Product Image">
+          <img src="./img/Royal Enfield Classic 350.jpg" alt="Product Image">
         </div>
         <div class="product-details">
-          <h2 class="product-title">Wireless Headphones</h2>
+          <h2 class="product-title">Royal Enfield Classic 350</h2>
           <p class="product-location">
-            <i class="fa fa-map-marker"></i> Nagpur, MH
+            <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
           </p>
           <p class="product-description">
-            Stylish and comfortable wireless headphones for a seamless audio experience.
+            A retro-styled bike known for comfort and long rides.
           </p>
           <div class="product-information">
-            <span class="product-price">₹ 799.99</span>
+            <span class="product-price">₹ 60099.99</span>
             <button class="btn secondary-btn">View Details</button>
           </div>
         </div>
       </div>
+
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./img/Oceanview Villas.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Oceanview Villas</h2>
+          <p class="product-location">
+            <i class="fa fa-map-marker"></i> Vasco da Gama, Goa
+          </p>
+          <p class="product-description">
+            Luxurious beachside villas with panoramic ocean views.
+          </p>
+          <div class="product-information">
+            <span class="product-price">₹ 800099.99</span>
+            <button class="btn secondary-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./img/Apple-MacBook-laptop.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">MacBook Pro M2</h2>
+          <p class="product-location">
+            <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
+          </p>
+          <p class="product-description">
+            A professional-grade laptop with the M2 chip for creators.
+          </p>
+          <div class="product-information">
+            <span class="product-price">₹ 20099.99</span>
+            <button class="btn secondary-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./img/Heritage Homes.jpeg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Heritage Homes</h2>
+          <p class="product-location">
+            <i class="fa fa-map-marker"></i> Ahmedabad, Gujrat
+          </p>
+          <p class="product-description">
+            Vintage-style houses with a blend of classic and modern design.
+          </p>
+          <div class="product-information">
+            <span class="product-price">₹ 30099.99</span>
+            <button class="btn secondary-btn">View Details</button>
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
 
@@ -137,6 +284,64 @@
   </div>
 
 
+
+  <footer>
+    <div class="footer-section">
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">Popular Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Mumbai</a>
+          <a href="#" class="anchor-style">Nagpur</a>
+          <a href="#" class="anchor-style">Pune</a>
+          <a href="#" class="anchor-style">Chennai</a>
+        </div>
+      </div>
+      
+      <div class="trending-locations">
+        <h2 class="footer-heading-style">Trending Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style"> Bhubaneshwar</a>
+          <a href="#" class="anchor-style"> Hyderabad </a>
+          <a href="#" class="anchor-style">Chandigarh</a>
+          <a href="#" class="anchor-style"> Nashik</a>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <h2 class="footer-heading-style">About Us</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Tech@EcoSwap</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">EcoSwap</h2>
+        <div class="site-about footer-anchor-style">
+          <a href="#" class="anchor-style">Blog</a>
+          <a href="#" class="anchor-style">Help</a>
+          <a href="#" class="anchor-style">Sitemap</a>
+          <a href="#" class="anchor-style">Legal & Privacy information</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h1 class="footer-heading-style">Follow Us</h1>
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram footer-icon-style"></i>
+          <i class="fa-brands fa-facebook footer-icon-style"></i>
+          <i class="fa-brands fa-twitter footer-icon-style"></i>
+          <i class="fa-brands fa-linkedin footer-icon-style"></i>
+          <i class="fa-brands fa-youtube footer-icon-style"></i>
+        </div>
+      </div>
+
+    </div>
+         <hr class="plane-line">
+         <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+  </footer>
+
+  <script src="./javascript/app.js"></script>
   <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
 </body>
 </html>

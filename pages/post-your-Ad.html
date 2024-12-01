@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -61,6 +62,64 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo-box">
+                <h2 class="logo">EcoSwap</h2>
+            </div>
+            <div class="select-location-container">
+                <select name="select location" id="select-option">
+                     <option>Select Location</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </div>
+            <div class="product-search-container">
+                <input type="text" class="product-search-input">
+                <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            </div>
+            <div class="select-language-contaiiner">
+                <select id="select-language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+    
+            <div class="product-sell-box">
+                <button class="sell-product-btn">
+                 <i class="fa-solid fa-plus sell-icon"></i>
+                    SELL
+                </button>
+            </div>
+    
+            <div class="user-profile">
+                <i class="fa-regular fa-user profile-img" ></i>
+            </div>
+            
+        </div>
+    
+        <!-- sub-navbar ----------------------------------------------------->
+    
+        <div class="sub-navbar">
+              <div class="navbar-pages-container">
+                <div class="vehicals-page">
+                    <p class="style-p">Vahicals : Bike & Car & Scooter</p>
+                </div>
+        
+                <div class="RealEtate-page">
+                    <p class="style-p">RealEtate : Houses & Apartments</p>
+                </div>
+        
+                <div class="Electronics-page">
+                    <p class="style-p">Electronics : Smart Phone & Laptop & Tablet</p>
+                </div>
+              </div>
+        </div>
+    
+      </header>
+    
     <h1 class="heading">Post Your Ad</h1>
     <div class="main">
         <h2 class="Category">Choose a Category</h2>

@@ -43,3 +43,7 @@ const slide = document.getElementById('cover-img');
         const overlayEle = document.getElementById('overlay');
         overlayEle.style.display = "none";
     }
+
+    function alertMessage(){
+        alert("Message send Successfully !!");
+    }

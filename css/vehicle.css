@@ -38,7 +38,10 @@ a{
 .categories-heading{
     font-size: 18px;
     font-weight: bold;
-    
+}
+
+b{
+    font-weight: bold;
 }
 
 .angle-down {
@@ -53,7 +56,8 @@ a{
 }
 
 .sub-category{
-    margin-left: 19px;
+    margin-left: 30px;
+    margin-top: 9px;
 }
 
 .products-card {

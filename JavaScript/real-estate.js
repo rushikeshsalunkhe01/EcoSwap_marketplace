@@ -1,3 +1,27 @@
+//search product by name
+
+
+function searchProduct() {
+
+    const searchQuery = document.getElementById('product-search-input').value.toLowerCase();
+    
+
+    const productCards = document.querySelectorAll('.product-card');
+    
+
+    productCards.forEach(card => {
+
+        const productTitle = card.querySelector('.product-title').textContent.toLowerCase();
+        
+        if (productTitle.includes(searchQuery) && searchQuery !== "") {
+            card.style.display = 'block'; // Show the card
+        } else {
+            card.style.display = 'none'; // Hide the card
+        }
+    });
+}
+
+
 // Drop-Up Drop-Down function
 
 let isDropdownVisible = false;

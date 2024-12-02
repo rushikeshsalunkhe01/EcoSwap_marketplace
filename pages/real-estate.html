@@ -25,8 +25,8 @@
             </select>
         </div>
         <div class="product-search-container">
-            <input type="text" class="product-search-input">
-            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            <input type="text" class="product-search-input" id="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="searchProduct()"></i>
         </div>
         <div class="select-language-contaiiner">
             <select id="select-language">
@@ -96,9 +96,9 @@
                     <br/>
                     <p class="re-properties">— &nbsp; &nbsp;Properties</p>
                     <p class="re-sub-properties-section">
-                        <p class="re-sub-properties">For Sale: Houses & Apartments</p>
-                        <p class="re-sub-properties">For Rent: Houses & Apartments</p>
-                        <p class="re-sub-properties">Lands & Plots</p>
+                        <p class="re-sub-properties" onclick="forSale()">For Sale: Houses & Apartments</p>
+                        <p class="re-sub-properties" onclick="forRent()">For Rent: Houses & Apartments</p>
+                        <p class="re-sub-properties" onclick="lands()">Lands & Plots</p>
                     </p>
                 </div>
             </div>

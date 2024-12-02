@@ -21,7 +21,7 @@
         }
 
         .card{
-            border: 1px solid black;
+            border: 2px solid black;
             height: 500px;
             width: 450px;
             margin: 10px auto;
@@ -29,8 +29,8 @@
         }
 
         .Product-title{
-           border: 2px solid Black;
-           padding: 10px;
+           border: 1px solid Black;
+           height: 35px;
            margin: 20px 50px;
            width: 350px;
 
@@ -39,11 +39,21 @@
         .Description{
             width: 350px;
             height: 60px;
-            border: 2px solid Black;
+            border: 1px solid Black;
            padding: 10px;
            margin: 20px 50px;
         }
         .btn{
+            width: 300px;
+            margin: 10px 70px;
+            height: 35px;
+            border: 1px solid Black;
+            background-color: #e6e6e6;
+            font-size: 17px; 
+        }
+        .file{
+            margin: 10px 50px;
+            border: 0px solid Black;
             
         }
         
@@ -119,6 +129,8 @@
         <input type="text"  Placeholder="Location" required class="Product-title"> <br/>
         <input type="text"  Placeholder="Description" required class="Description"> <br/>
         <input type="text"  Placeholder="Price (₹)" required class="Product-title"> <br/>
+
+        <input type="file" class="file" placeholder="Choose File">
 
         <button class="btn">Submit</button> <br/>
         <button class="btn">Cancel</button>

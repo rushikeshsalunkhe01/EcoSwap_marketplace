@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSwap</title>
+    <link rel="stylesheet" href="./../css/real-estate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+
+      <div class="sidedar-container">
+
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+        <div class="side-bar" id="side-bar">
+          <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+    
+          <div class="item" id="first-item">
+            <i class="fa-solid fa-user icon-style"></i>
+            <h3 class="item-name">Profile</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-sellsy icon-style"></i>
+            <h3 class="item-name">Start Selling</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-credit-card icon-style"></i>
+            <h3 class="item-name">My ADS</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-tag icon-style"></i>
+            <h3 class="item-name">Select Language</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-rocketchat icon-style"></i>
+            <h3 class="item-name">Chats</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-headset icon-style"></i>
+            <h3 class="item-name">Help</h3>
+          </div>
+    
+        </div>
+    
+      </div>
+
+
+        <div class="logo-box">
+            <h2 class="logo">EcoSwap</h2>
+        </div>
+        <div class="select-location-container">
+            <select name="select location" id="select-option">
+                <option>Select Location</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujrat">Gujrat</option>
+            </select>
+        </div>
+        <div class="product-search-container">
+            <input type="text" class="product-search-input" id="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="searchProduct()"></i>
+        </div>
+        <div class="select-language-contaiiner">
+            <select id="select-language">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+
+        <div class="product-sell-box">
+            <button class="sell-product-btn">
+             <i class="fa-solid fa-plus sell-icon"></i>
+                SELL
+            </button>
+        </div>
+
+        <div class="user-profile">
+            <i class="fa-regular fa-user profile-img" ></i>
+        </div>
+        
+    </div>
+
+    <!-- sub-navbar ----------------------------------------------------->
+
+    <div class="sub-navbar">
+          <div class="navbar-pages-container">
+            <div class="vehicals-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Vehicals : Bike & Car & Scooter</a></p>
+            </div>
+    
+            <div class="RealEtate-page">
+                <p class="style-p"><a href="./real-estate.html" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+            </div>
+    
+            <div class="Electronics-page">
+                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone & Laptop & Tablet</a></p>
+            </div>
+          </div>
+    </div>
+
+  </header>
+
+    
+    <!-- hero-section --------------------------------->
+
+    <div class="hero-section">
+        <div class="slider-main">
+          <img src="./../img/house-banner.png" alt="" class="slider-img" onclick="next()" id="new">
+        </div>
+    </div>
+    
+
+    <!-- realEstate-section --------------------------------->
+
+    <div class="re-heading">
+        <p class="re-properties">Home / Properties</p>
+        <p class="re-text bold">Buy & Sell Houses, Apartments and Flats in India</p>
+    </div>
+    <div class="realEstate-container">
+        <div class="re-sub-container">
+            <div class="re-categories-section">
+                <span class="bold">CATEGORIES</span>
+                <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="c-drop-down" onclick="cToggleDropDown()">
+                <br/><br/>
+                <p class="re-categories-subtext bold" id="c-categories-subtext" >For Sale: Houses & Apartments</p>
+                <div class="re-categories-info" id="c-categories-info">
+                    <p class="bold">— &nbsp; &nbsp;All Categories</p>
+                    <br/>
+                    <p class="re-properties">— &nbsp; &nbsp;Properties</p>
+                    <p class="re-sub-properties-section">
+                        <p class="re-sub-properties" onclick="forSale()">For Sale: Houses & Apartments</p>
+                        <p class="re-sub-properties" onclick="forRent()">For Rent: Houses & Apartments</p>
+                        <p class="re-sub-properties" onclick="lands()">Lands & Plots</p>
+                    </p>
+                </div>
+            </div>
+            <div class="re-location-section">
+              <span class="bold">LOCATIONS</span>
+              <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="l-drop-down" onclick="lToggleDropDown()">
+              <br/><br/>
+              <p class="re-categories-subtext bold" id="l-categories-subtext">India</p>
+              <div class="re-categories-info" id="l-categories-info">
+                <p class="bold">— &nbsp; &nbsp;India</p>
+                <p class="re-sub-properties-section">
+                    <p class="re-sub-properties" onclick="filterByLocation('Goa')">Goa</p>
+                    <p class="re-sub-properties" onclick="filterByLocation('Gujrat')">Gujrat</p>
+                    <p class="re-sub-properties" onclick="filterByLocation('Maharashtra')">Maharashtra</p>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="re-card-container">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./../img/Oceanview Villas.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="product-title">Oceanview Villas</h2>
+              <p class="product-location">
+                <i class="fa fa-map-marker"></i> Vasco da Gama, Goa
+              </p>
+              <p class="product-description">
+                Luxurious beachside villas with panoramic ocean views.
+              </p>
+              <div class="product-information">
+                <span class="product-price">₹ 8,00,099.99</span>
+                <button class="btn secondary-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="./../img/Heritage Homes.jpeg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="product-title">Heritage Homes</h2>
+              <p class="product-location">
+                <i class="fa fa-map-marker"></i> Ahmedabad, Gujrat
+              </p>
+              <p class="product-description">
+                Vintage-style houses with a blend of classic and modern design.
+              </p>
+              <div class="product-information">
+                <span class="product-price">₹ 30099.99</span>
+                <button class="btn secondary-btn">View Details</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+                <div class="product-image">
+                  <img src="./../img/real-estate-images/apartment-1.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                  <h2 class="product-title">Mountain Retreat Apartments</h2>
+                  <p class="product-location">
+                    <i class="fa fa-map-marker"></i> Pune, Maharashtra
+                  </p>
+                  <p class="product-description">
+                    Cozy apartments nestled in the hills, offering fresh mountain air and scenic views.
+                  </p>
+                  <div class="product-information">
+                    <span class="product-price">₹ 15,00,000.99</span>
+                    <button class="btn secondary-btn">View Details</button>
+                  </div>
+                </div>
+          </div>
+          <div class="product-card">
+                <div class="product-image">
+                  <img src="./../img/real-estate-images/apartment-2.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                  <h2 class="product-title">City Heights Residences</h2>
+                  <p class="product-location">
+                    <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
+                  </p>
+                  <p class="product-description">
+                    Modern high-rise apartments with a great view of the city skyline and all essential amenities.                  <div class="product-information">
+                    <span class="product-price">₹ 20,00,000.99</span>
+                    <button class="btn secondary-btn">View Details</button>
+                  </div>
+                </div>
+          </div>
+          <div class="product-card">
+                <div class="product-image">
+                  <img src="./../img/real-estate-images/land-1.avif" alt="Product Image">
+                </div>
+                <div class="product-details">
+                  <h2 class="product-title">Agricultural Land in Mumbai</h2>
+                  <p class="product-location">
+                    <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
+                  </p>
+                  <p class="product-description">
+                    Fertile agricultural land suitable for farming, with good irrigation facilities and proximity to major highways. Ideal for crops like wheat, rice, and vegetables.
+                  </p>
+                  <div class="product-information">
+                    <span class="product-price">₹ 50,00,000.99</span>
+                    <button class="btn secondary-btn">View Details</button>
+                  </div>
+                </div>
+          </div>
+          <div class="product-card">
+                <div class="product-image">
+                  <img src="./../img/real-estate-images/land-2.jpg" alt="Product Image">
+                </div>
+                <div class="product-details">
+                  <h2 class="product-title">Residential Plot in Goa</h2>
+                  <p class="product-location">
+                    <i class="fa fa-map-marker"></i> Benaulim, South Goa
+                  </p>
+                  <p class="product-description">
+                    A prime residential plot located in the heart of South Goa, perfect for building your dream home. Close to the beach and local markets.
+                  </p>
+                  <div class="product-information">
+                    <span class="product-price">₹ 35,00,000.99</span>
+                    <button class="btn secondary-btn">View Details</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+  <footer>
+    <div class="footer-section">
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">Popular Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Mumbai</a>
+          <a href="#" class="anchor-style">Nagpur</a>
+          <a href="#" class="anchor-style">Pune</a>
+          <a href="#" class="anchor-style">Chennai</a>
+        </div>
+      </div>
+      
+      <div class="trending-locations">
+        <h2 class="footer-heading-style">Trending Locations</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style"> Bhubaneshwar</a>
+          <a href="#" class="anchor-style"> Hyderabad </a>
+          <a href="#" class="anchor-style">Chandigarh</a>
+          <a href="#" class="anchor-style"> Nashik</a>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <h2 class="footer-heading-style">About Us</h2>
+        <div class="locations footer-anchor-style">
+          <a href="#" class="anchor-style">Tech@EcoSwap</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h2 class="footer-heading-style">EcoSwap</h2>
+        <div class="site-about footer-anchor-style">
+          <a href="#" class="anchor-style">Blog</a>
+          <a href="#" class="anchor-style">Help</a>
+          <a href="#" class="anchor-style">Sitemap</a>
+          <a href="#" class="anchor-style">Legal & Privacy information</a>
+        </div>
+      </div>
+
+      <div class="popular-locations">
+        <h1 class="footer-heading-style">Follow Us</h1>
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram footer-icon-style"></i>
+          <i class="fa-brands fa-facebook footer-icon-style"></i>
+          <i class="fa-brands fa-twitter footer-icon-style"></i>
+          <i class="fa-brands fa-linkedin footer-icon-style"></i>
+          <i class="fa-brands fa-youtube footer-icon-style"></i>
+        </div>
+      </div>
+
+    </div>
+         <hr class="plane-line">
+         <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+  </footer>
+
+  <script src="./../JavaScript/real-estate.js"></script>
+  <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -366,6 +366,11 @@
     .vehicle-subdiv2{
         height: 270px;
     }
+    .vehicle-subdiv5{
+        margin-top: 30px;
+    }
+
+
 
     .img-same {
         height: 30px;
@@ -385,6 +390,9 @@
     .vehicle-subdiv1, .vehicle-subdiv2, .vehicle-subdiv3, .vehicle-subdiv5, .vehicle-subdiv6 {
         width: 100%;
     }
+    .vehicle-subdiv5{
+        margin-top: 30px;
+    }
 
     .img-same {
         height: 25px;
@@ -403,7 +411,7 @@
     }
 
     .make-offer-btn, .loan-vechile {
-        width: 100%;
+        width: 530px;
     }
 
     iframe {

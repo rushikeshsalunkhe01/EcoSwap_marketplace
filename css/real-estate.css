@@ -460,6 +460,10 @@ footer{
 
  @media screen and (max-width:500px){
 
+  .re-text{
+    font-size: 15px;
+  }
+
   .navbar-pages-container{
     display: flex;
     flex-direction: column;
@@ -475,6 +479,10 @@ footer{
  /* for tablet devices**************************/
 
  @media screen and (min-width:501px) and (max-width:768px){
+  .re-text{
+    font-size: 20px;
+  }
+  
   .re-drop-down{
     margin-left: 13px;
   }
@@ -492,7 +500,8 @@ footer{
  }
 
 
- 
+
+
  
 
  /* From home page*******************************/
@@ -554,13 +563,6 @@ footer{
 }
 
 }
-
-
-
-
-
-
-
 
 
 

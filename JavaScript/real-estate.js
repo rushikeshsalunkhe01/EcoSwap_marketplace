@@ -134,3 +134,22 @@ function lDropUp(){
     const categoriesInfoElement = document.getElementById('l-categories-info');
     categoriesInfoElement.style.visibility = 'hidden';
 }
+
+
+// Filter based on clicked location
+
+function filterByLocation(location) {
+    
+    const cardElement = document.querySelectorAll('.product-card');
+    
+    cardElement.forEach(card => {
+        
+        const productLocation = card.querySelector('.product-location').textContent;
+
+        if (productLocation.includes(location)) {
+            card.style.display = 'block';  
+        } else {
+            card.style.display = 'none';  
+        }
+    });
+}

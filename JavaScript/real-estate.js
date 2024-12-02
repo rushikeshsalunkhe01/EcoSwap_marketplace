@@ -1,3 +1,30 @@
+//filter by location
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const selectBox = document.getElementById('select-option');
+
+    const cards = document.querySelectorAll('.product-card');
+
+    selectBox.addEventListener('change', function () {
+       
+        const selectedLocation = selectBox.value;
+
+        cards.forEach(card => {
+          
+            const cardLocation = card.querySelector('.product-location').textContent;
+
+            if (selectedLocation === "Select Location" || cardLocation.includes(selectedLocation)) {
+                card.style.display = "block"; 
+            } else {
+                card.style.display = "none"; 
+            }
+        });
+    });
+});
+
+
+
 //search product by name
 
 
@@ -20,6 +47,7 @@ function searchProduct() {
         }
     });
 }
+
 
 
 // Drop-Up Drop-Down function

@@ -171,7 +171,7 @@
     padding-left: 30px;
 }
 
-#re-down-arrow{
+#re-drop-down{
     height: 15px;
     margin-left: 140px;
     cursor: pointer;
@@ -181,10 +181,10 @@
 #re-categories-subtext{
     font-size: 12px;
 }
-/* 
+
 #re-categories-info{
     visibility: hidden;
-} */
+}
 
 .re-properties{
     margin-left: 10px;

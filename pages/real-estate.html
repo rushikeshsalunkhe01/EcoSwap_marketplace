@@ -88,10 +88,10 @@
         <div class="re-sub-container">
             <div class="re-categories-section">
                 <span class="bold">CATEGORIES</span>
-                <img src="./../img/real-estate-images/down-arrow.png" id="re-drop-down" onclick="toggleDropDown()">
+                <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="c-drop-down" onclick="cToggleDropDown()">
                 <br/><br/>
-                <p id="re-categories-subtext" class="bold">For Sale: Houses & Apartments</p>
-                <div id="re-categories-info">
+                <p class="re-categories-subtext bold" id="c-categories-subtext" >For Sale: Houses & Apartments</p>
+                <div class="re-categories-info" id="c-categories-info">
                     <p class="bold">— &nbsp; &nbsp;All Categories</p>
                     <br/>
                     <p class="re-properties">— &nbsp; &nbsp;Properties</p>
@@ -103,12 +103,18 @@
                 </div>
             </div>
             <div class="re-location-section">
-                <!-- <p>LOCATIONS</p>
-                <p>__ India</p>
-                <p>
-                    Kerala
-                    Maharashtra
-                </p> -->
+              <span class="bold">LOCATIONS</span>
+              <img src="./../img/real-estate-images/down-arrow.png" class="re-drop-down" id="l-drop-down" onclick="lToggleDropDown()">
+              <br/><br/>
+              <p class="re-categories-subtext bold" id="l-categories-subtext">India</p>
+              <div class="re-categories-info" id="l-categories-info">
+                <p class="bold">— &nbsp; &nbsp;India</p>
+                <p class="re-sub-properties-section">
+                    <p class="re-sub-properties">Goa</p>
+                    <p class="re-sub-properties">Gujrat</p>
+                    <p class="re-sub-properties">Maharashtra</p>
+                </p>
+            </div>
             </div>
         </div>
         <div class="re-card-container">

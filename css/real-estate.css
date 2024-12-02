@@ -171,18 +171,18 @@
     padding-left: 30px;
 }
 
-#re-drop-down{
+.re-drop-down{
     height: 15px;
     margin-left: 140px;
     cursor: pointer;
 }
 
 
-#re-categories-subtext{
+.re-categories-subtext{
     font-size: 12px;
 }
 
-#re-categories-info{
+.re-categories-info{
     visibility: hidden;
 }
 

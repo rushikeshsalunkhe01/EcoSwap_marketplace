@@ -2,34 +2,65 @@
 
 let isDropdownVisible = false;
 
-    function toggleDropDown() {
+    function cToggleDropDown() {
         if (isDropdownVisible) {
-            dropUp();
+            cDropUp();
         } else {
-            dropDown();
+            cDropDown();
         }
         isDropdownVisible = !isDropdownVisible;
     }
 
 
-function dropDown(){
-    const dropDownElement = document.getElementById('re-drop-down');
+function cDropDown(){
+    const dropDownElement = document.getElementById('c-drop-down');
     dropDownElement.src = './../img/real-estate-images/up-arrow.png';
 
-    const categoriesElement = document.getElementById('re-categories-subtext');
+    const categoriesElement = document.getElementById('c-categories-subtext');
     categoriesElement.style.visibility = 'hidden';
 
-    const categoriesInfoElement = document.getElementById('re-categories-info');
+    const categoriesInfoElement = document.getElementById('c-categories-info');
     categoriesInfoElement.style.visibility = 'visible';
 }
 
-function dropUp(){
-    const dropDownElement = document.getElementById('re-drop-down');
+function cDropUp(){
+    const dropDownElement = document.getElementById('c-drop-down');
     dropDownElement.src = './../img/real-estate-images/down-arrow.png';
 
-    const categoriesElement = document.getElementById('re-categories-subtext');
+    const categoriesElement = document.getElementById('c-categories-subtext');
     categoriesElement.style.visibility = 'visible';
 
-    const categoriesInfoElement = document.getElementById('re-categories-info');
+    const categoriesInfoElement = document.getElementById('c-categories-info');
+    categoriesInfoElement.style.visibility = 'hidden';
+}
+
+function lToggleDropDown() {
+    if (isDropdownVisible) {
+        lDropUp();
+    } else {
+        lDropDown();
+    }
+    isDropdownVisible = !isDropdownVisible;
+}
+
+function lDropDown(){
+    const dropDownElement = document.getElementById('l-drop-down');
+    dropDownElement.src = './../img/real-estate-images/up-arrow.png';
+
+    const categoriesElement = document.getElementById('l-categories-subtext');
+    categoriesElement.style.visibility = 'hidden';
+
+    const categoriesInfoElement = document.getElementById('l-categories-info');
+    categoriesInfoElement.style.visibility = 'visible';
+}
+
+function lDropUp(){
+    const dropDownElement = document.getElementById('l-drop-down');
+    dropDownElement.src = './../img/real-estate-images/down-arrow.png';
+
+    const categoriesElement = document.getElementById('l-categories-subtext');
+    categoriesElement.style.visibility = 'visible';
+
+    const categoriesInfoElement = document.getElementById('l-categories-info');
     categoriesInfoElement.style.visibility = 'hidden';
 }

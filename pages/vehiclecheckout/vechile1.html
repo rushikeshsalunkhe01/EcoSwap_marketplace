@@ -6,16 +6,63 @@
     <link rel="stylesheet" href="./../../css/vehiclecheckout.css"/>
     <link rel="stylesheet" href="./../../css/style.css"/>
     <title>Vechile 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
     <header>
         <div class="navbar">
+         
+          <div class="sidedar-container">
+    
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon" onclick="openSideBar()"></i>
+        <div class="side-bar" id="side-bar">
+          <i class="fa-solid fa-xmark close-icon" onclick="closeIcon()"></i>
+    
+          <div class="item" id="first-item">
+            <i class="fa-solid fa-user icon-style"></i>
+            <h3 class="item-name">Profile</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-sellsy icon-style"></i>
+            <h3 class="item-name">Start Selling</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-credit-card icon-style"></i>
+            <h3 class="item-name">My ADS</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-tag icon-style"></i>
+            <h3 class="item-name">Select Language</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-brands fa-rocketchat icon-style"></i>
+            <h3 class="item-name">Chats</h3>
+          </div>
+    
+          <div class="item">
+            <i class="fa-solid fa-headset icon-style"></i>
+            <h3 class="item-name">Help</h3>
+          </div>
+    
+        </div>
+    
+          </div>
+    
+    
             <div class="logo-box">
                 <h2 class="logo">EcoSwap</h2>
             </div>
             <div class="select-location-container">
                 <select name="select location" id="select-option">
-                     <option>Select Location</option>
+                    <option>Select Location</option>
                     <option value="Nagpur">Nagpur</option>
                     <option value="Pune">Pune</option>
                     <option value="Mumbai">Mumbai</option>
@@ -51,15 +98,18 @@
         <div class="sub-navbar">
               <div class="navbar-pages-container">
                 <div class="vehicals-page">
-                    <p class="style-p">Vahicals : Bike & Car & Scooter</p>
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">Vahicals : Bike <span class="in-product-style">& Car & Scooter</span></a></p>
                 </div>
         
                 <div class="RealEtate-page">
-                    <p class="style-p">RealEtate : Houses & Apartments</p>
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses<span class="in-product-style">& Apartments </span></a></p>
                 </div>
         
                 <div class="Electronics-page">
-                    <p class="style-p">Electronics : Smart Phone & Laptop & Tablet</p>
+    
+                    
+                    <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone<span class="in-product-style"> & Laptop & Tablet</span></a></p>
+    
                 </div>
               </div>
         </div>
@@ -139,8 +189,7 @@
                         </div>
 
                     </div>
-                </div>
-                    
+                </div>    
                 
 
             </div>
@@ -186,49 +235,118 @@
                     <div class=""><img src="./../../img/vehiclecheckoutimg/money-bank.svg" class="money-bank"/></div>
                    <div class="get-offer">Get Instant Loan.<b>Apply Now !</b></div>
                 </div>
-
-                
             </div>
+
+
+                <div class="vehicle-subdiv4">
+                    <div class="logo-name-cont">
+                        <div class="subdiv4-logo"><img src="./../../img/vehiclecheckoutimg/carlogo.avif" class="subdiv4-logo"/></div>
+                        <h2 class="logo-name-cont-2">Sachdeva Motors</h2>
+                        <a href="https://g.co/kgs/X9dvMkT"><img src="./../../img/vehiclecheckoutimg/next2.png" style="height: 40px; margin-left: 20px; margin-top: 40px;"/></a>
+                    </div>
+                    <div>
+                        <button class="chat-with-seller" onclick="openModel('message')"><b>Chat with seller</b></button>
+                    </div>
+              </div>
+    
+                
+
             <div class="vehicle-subdiv6">
                 
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223895.04356658066!2d77.13553934229687!3d28.738665023073732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03e8eb96460d%3A0xcd025d9366794b57!2sSharda%20Niketan%2C%20Pitampura%2C%20Delhi%2C%20110034!5e0!3m2!1sen!2sin!4v1732972596278!5m2!1sen!2sin" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-            <div class="vehicle-subdiv6">
-                
             </div>
-
-        </div>
 
     </div>
 
-    <script> 
-        const slide = document.getElementById('cover-img');
-        const img = ["./../../img/vehiclecheckoutimg/vehicle1.jfif",
-                    "./../../img/vehiclecheckoutimg/v2.jfif",
-                    "./../../img/vehiclecheckoutimg/v3.jfif",
-                    "./../../img/vehiclecheckoutimg/v4.jfif",
-                    "./../../img/vehiclecheckoutimg/v5.jfif",
-                "./../../img/vehiclecheckoutimg/v6.jfif",];
-        let index = 0;
 
-        function next() {
-            if (index < img.length - 1) {
-                index++;
-            } else {
-                index = 0;
-            }
-            slide.src = img[index];
-        }
 
-        function back() {
-            if (index > 0) {
-                index--;
-            } else {
-                index = img.length - 1;
-            }
-            slide.src = img[index];
-        }
-    </script>
+
+
+    
+    <div class="overlay" id="overlay">
+        <div class="model" id="message-model" style="display:none;">
+            <img src="./../../img/vehiclecheckoutimg/close.png" id="close" onclick="closeModel()"/>
+            <h3 class="send-msg-text">Send Message</h3>
+            <form class="form-container">
+                <input type="text" placeholder="Enter your name" class="form-ip"/>
+                <input type="text" placeholder="Enter your email" class="form-ip"/>
+                <input type="text" placeholder="Enter your message" class="form-ip"/>
+            </form>
+            <div class="form-btn">
+                <button class="send-btn" id="message" onclick="closeModel(),alertMessage()"  >Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+    <footer>
+        <div class="footer-section">
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">Popular Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Mumbai</a>
+              <a href="#" class="anchor-style">Nagpur</a>
+              <a href="#" class="anchor-style">Pune</a>
+              <a href="#" class="anchor-style">Chennai</a>
+            </div>
+          </div>
+          
+          <div class="trending-locations">
+            <h2 class="footer-heading-style">Trending Locations</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style"> Bhubaneshwar</a>
+              <a href="#" class="anchor-style"> Hyderabad </a>
+              <a href="#" class="anchor-style">Chandigarh</a>
+              <a href="#" class="anchor-style"> Nashik</a>
+            </div>
+          </div>
+    
+          <div class="about-us">
+            <h2 class="footer-heading-style">About Us</h2>
+            <div class="locations footer-anchor-style">
+              <a href="#" class="anchor-style">Tech@EcoSwap</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h2 class="footer-heading-style">EcoSwap</h2>
+            <div class="site-about footer-anchor-style">
+              <a href="#" class="anchor-style">Blog</a>
+              <a href="#" class="anchor-style">Help</a>
+              <a href="#" class="anchor-style">Sitemap</a>
+              <a href="#" class="anchor-style">Legal & Privacy information</a>
+            </div>
+          </div>
+    
+          <div class="popular-locations">
+            <h1 class="footer-heading-style">Follow Us</h1>
+            <div class="social-icons">
+              <i class="fa-brands fa-instagram footer-icon-style"></i>
+              <i class="fa-brands fa-facebook footer-icon-style"></i>
+              <i class="fa-brands fa-twitter footer-icon-style"></i>
+              <i class="fa-brands fa-linkedin footer-icon-style"></i>
+              <i class="fa-brands fa-youtube footer-icon-style"></i>
+            </div>
+          </div>
+    
+        </div>
+             <hr class="plane-line">
+             <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
+      </footer>
+     
+
+
+
+        <script src="./../../JavaScript/vehiclecheckout.js"></script>
+        <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
+
+
+
 
     
 </body>

@@ -64,30 +64,34 @@ The project is organized into structured directories for easy navigation, with s
 - Assets (e.g., images)
 
 ---
+Here's your updated **Project Members and Contributions** section with the correct GitHub links for all the contributors:
+
+---
 
 ## Project Members and Contributions
 
-- **Siddi Pagire**: Vehicles product checkout pages
-GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
-- **Suraj Ghogare**: Electronics products main page
-GitHub: [Surajghogare80](https://github.com/Surajghogare80)
-- **Vandita Satarde**: Real Estate products main page
-GitHub: [vandita-satarde](https://github.com/vandita-satarde)
+- **Siddi Pagire**: Vehicles product checkout pages  
+  GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
+- **Suraj Ghogare**: Electronics products main page  
+  GitHub: [Surajghogare80](https://github.com/Surajghogare80)
+- **Vandita Satarde**: Real Estate products main page  
+  GitHub: [vandita-satarde](https://github.com/vandita-satarde)
 - **Vaishnavi Kolse**: Real Estate product checkout pages  
   GitHub: [VaishnaviKolse](https://github.com/VaishnaviKolse)
 - **Rasika Shete**: Vehicles main page  
   GitHub: [sheterasika](https://github.com/sheterasika/)
-- **Akash Amode**: Main home page, Ad post page
- GitHub: [AKashAMode](https://github.com/AKashAMode)
+- **Akash Amode**: Main home page, Ad post page  
+  GitHub: [AKashAMode](https://github.com/AKashAMode)
 - **Kiran More**: Product ad form  
   GitHub: [kiranmore2404](https://github.com/kiranmore2404)
-- **Rushikesh Salunke**: Signup and login page
- GitHub: [rushikeshsalunkhe01](https://github.com/rushikeshsalunkhe01)
+- **Rushikesh Salunke**: Signup and login page  
+  GitHub: [rushikeshsalunkhe01](https://github.com/rushikeshsalunkhe01)
 - **Aastha Dhongade**: Contact page  
   GitHub: [Aastha7378](https://github.com/Aastha7378)
 
 ---
 
+Let me know if you need any further changes!
 ## Contributions
 
 Contributions to the project are welcome. Developers can:

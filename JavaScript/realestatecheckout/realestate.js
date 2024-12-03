@@ -1,10 +1,7 @@
 const slide = document.getElementById('cover-img');
-        const img = ["./../../img/vehiclecheckoutimg/vehicle1.jfif",
-                    "./../../img/vehiclecheckoutimg/v2.jfif",
-                    "./../../img/vehiclecheckoutimg/v3.jfif",
-                    "./../../img/vehiclecheckoutimg/v4.jfif",
-                    "./../../img/vehiclecheckoutimg/v5.jfif",
-                "./../../img/vehiclecheckoutimg/v6.jfif",];
+        const img = ["/img/villa.png",
+                    "/img/villa2.jpeg",
+                    "/img/oceanview villas.jpeg"];
         let index = 0;
 
         function next() {

@@ -43,4 +43,4 @@ const slide = document.getElementById('cover-img');
 
     function alertMessage(){
         alert("Message send Successfully !!");
-    }2331
+    }

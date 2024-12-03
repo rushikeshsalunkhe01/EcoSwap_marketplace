@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoSwap</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/vehicle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vehicle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
             </select>
         </div>
         <div class="product-search-container">
-            <input type="text" class="product-search-input">
-            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            <input type="text" class="product-search-input" id="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="searchProduct()"></i>
         </div>
         <div class="select-language-contaiiner">
             <select id="select-language">
@@ -54,11 +54,11 @@
     <div class="sub-navbar">
           <div class="navbar-pages-container">
             <div class="vehicals-page">
-                <p class="style-p"><a href="../vehicle/vehicle.html" class="sub-nav-anchor">Vahicles : Bike & Car & Scooter</a></p>
+                <p class="style-p"><a href="./vehicle.html" class="sub-nav-anchor">Vahicles : Bike & Car & Scooter</a></p>
             </div>
     
             <div class="RealEtate-page">
-                <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
+                <p class="style-p"><a href="./real-estate.html" class="sub-nav-anchor">RealEtate : Houses & Apartments</a></p>
             </div>
     
             <div class="Electronics-page">
@@ -73,7 +73,7 @@
 
    <div class="hero-section">
     <div class="slider-main">
-      <img src="../../img/scooterbanner.png" alt="" class="slider-img" onclick="next()" id="new">
+      <img src="../img/scooterbanner.png" alt="" class="slider-img" onclick="next()" id="new">
   </div>
    </div>
 
@@ -93,11 +93,11 @@
           <i class="fa-solid fa-angle-down angle-down" id="down-arrow" onclick="down()" ></i>
           <i class="fa-solid fa-angle-up angle-up" id="up-arrow" onclick="up()"></i>
           <div class="sub-category" id="sidebar-container">
-            <a href="./car.html"><p> Car</p></a>
+            <p class="vehicle" onclick="filterByVehicle('Car')"> Car</p>
           
-            <a href="./bike.html"><p> Bike</p></a>
+            <p class="vehicle" onclick="filterByVehicle('Bike')"> Bike</p>
     
-            <a href="./scooter.html"><p> Scooter</p></a>
+            <p class="vehicle" onclick="filterByVehicle('Scooter')"> Scooter</p>
           </div>
 
           <br><hr><br>
@@ -106,13 +106,13 @@
           <i class="fa-solid fa-angle-down angle-down" id="down-arrow2" onclick="downarrow()" ></i>
           <i class="fa-solid fa-angle-up angle-up" id="up-arrow2" onclick="uparrow()"></i>
           <div class="sub-category" id="sidebar-container2">
-            <a href="./vehicle-nagpur.html"><p> Nagpur</p></a>
+            <p class="location" onclick="filterByLocation('Nagpur')"> Nagpur</p>
           
-            <a href="./vehicle-pune.html"><p> Pune</p></a>
+            <p class="location" onclick="filterByLocation('Pune')"> Pune</p>
           
-            <a href="./vehicle-mumbai.html"><p> Mumbai</p></a>
+            <p class="location" onclick="filterByLocation('Mumbai')"> Mumbai</p>
           
-           <a href="./vehicle-goa.html"><p> Goa</p></a>
+           <p class="location" onclick="filterByLocation('Goa')"> Goa</p>
            </div>
         </div>
       </div>
@@ -121,10 +121,10 @@
         
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/yamaha-cool-motorcycle.jpg" alt="Product Image">
+            <img src="../img/yamaha-cool-motorcycle.jpg" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Yamaha R15 V4</h2>
+            <h2 class="product-title">Yamaha R15 V4 Bike</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Pune, Maharashtra
             </p>
@@ -133,17 +133,17 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 100099.99</span>
-              <a href="../vehiclecheckout/yamaha.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/yamaha.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
 
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/Royal Enfield Classic 350.jpg" alt="Product Image">
+            <img src="../img/Royal Enfield Classic 350.jpg" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Royal Enfield Classic 350</h2>
+            <h2 class="product-title">Royal Enfield Classic 350 Bike</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
             </p>
@@ -152,17 +152,17 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 60099.99</span>
-              <a href="../vehiclecheckout/royalenfield.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/royalenfield.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
 
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/urban-cruiser-hyryder.webp" alt="Product Image">
+            <img src="../img/urban-cruiser-hyryder.webp" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Toyota Cruiser Hyryder</h2>
+            <h2 class="product-title">Toyota Cruiser Hyryder Car</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
             </p>
@@ -171,17 +171,17 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 1150000</span>
-              <a href="../vehiclecheckout/toyotacruiser.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/toyotacruiser.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
 
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/ather-450x.webp" alt="Product Image">
+            <img src="../img/ather-450x.webp" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Ather 450x</h2>
+            <h2 class="product-title">Ather 450x Scooter</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Mumbai, Maharashtra
             </p>
@@ -190,17 +190,55 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 100999.99</span>
-              <a href="../vehiclecheckout/ather.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/ather.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
 
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/bajaj-platina.webp" alt="Product Image">
+            <img src="../img/maruti-alto.webp" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Bajaj Platina 100 Es</h2>
+            <h2 class="product-title">Maruti Alto 800 Car</h2>
+            <p class="product-location">
+              <i class="fa fa-map-marker"></i> Pune, Maharashtra
+            </p>
+            <p class="product-description">
+              New model Maruti alto 800 with stylish look and minimun price.
+            </p>
+            <div class="product-information">
+              <span class="product-price">₹ 550000.00</span>
+              <a href="../pages/vehiclecheckout/marutialto.html"><button class="btn secondary-btn">View Details</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-card">
+          <div class="product-image">
+            <img src="../img/yamaha.webp" alt="Product Image">
+          </div>
+          <div class="product-details">
+            <h2 class="product-title">Yamaha FZ X Bike</h2>
+            <p class="product-location">
+              <i class="fa fa-map-marker"></i> Goa, Maharashtra
+            </p>
+            <p class="product-description">
+              Cool, stylish Yamaha FZ X metallic black coloured bike.
+            </p>
+            <div class="product-information">
+              <span class="product-price">₹ 135000.99</span>
+              <a href="../pages/vehiclecheckout/yamahafzx.html"><button class="btn secondary-btn">View Details</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-card">
+          <div class="product-image">
+            <img src="../img/bajaj-platina.webp" alt="Product Image">
+          </div>
+          <div class="product-details">
+            <h2 class="product-title">Bajaj Platina 100 Es Bike</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Pune, Maharashtra
             </p>
@@ -209,17 +247,17 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 80099.99</span>
-              <a href="../vehiclecheckout/bajaj.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/bajaj.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
         
         <div class="products-card">
           <div class="product-image">
-            <img src="../../img/swift.webp" alt="Product Image">
+            <img src="../img/swift.webp" alt="Product Image">
           </div>
           <div class="product-details">
-            <h2 class="product-title">Maruti Suzuki Swift</h2>
+            <h2 class="product-title">Maruti Suzuki Swift Car</h2>
             <p class="product-location">
               <i class="fa fa-map-marker"></i> Goa, Maharashtra
             </p>
@@ -228,7 +266,26 @@
             </p>
             <div class="product-information">
               <span class="product-price">₹ 600099.99</span>
-              <a href="../vehiclecheckout/marutisuzuki.html"><button class="btn secondary-btn">View Details</button></a>
+              <a href="../pages/vehiclecheckout/marutisuzuki.html"><button class="btn secondary-btn">View Details</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-card">
+          <div class="product-image">
+            <img src="../img/tvs-jupiter.webp" alt="Product Image">
+          </div>
+          <div class="product-details">
+            <h2 class="product-title">TVS Jupiter Scooter</h2>
+            <p class="product-location">
+              <i class="fa fa-map-marker"></i> Nagpur, Maharashtra
+            </p>
+            <p class="product-description">
+              Galactic Copper Matte colour jupiter with stylish look.
+            </p>
+            <div class="product-information">
+              <span class="product-price">₹ 90999.00</span>
+              <a href="../pages/vehiclecheckout/tvsjupiter.html"><button class="btn secondary-btn">View Details</button></a>
             </div>
           </div>
         </div>
@@ -296,7 +353,7 @@
          <p class="copy-right">All rights reserved © 2024 EcoSwap.</p>
   </footer>
 
-  <script src="../../JavaScript/vehicle.js"></script>
+  <script src="../JavaScript/vehicle.js"></script>
   <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
 
   

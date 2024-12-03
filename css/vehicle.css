@@ -40,6 +40,14 @@ a{
     font-weight: bold;
 }
 
+.vehicle{
+    cursor: pointer;
+}
+
+.location{
+    cursor: pointer;
+}
+
 b{
     font-weight: bold;
 }

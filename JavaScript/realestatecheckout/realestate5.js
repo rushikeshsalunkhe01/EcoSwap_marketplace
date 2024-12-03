@@ -1,7 +1,7 @@
 const slide = document.getElementById('cover-img');
-        const img = ["/img/realestatecheckout/aparments/aparment4.jpg",
-                    "/img/realestatecheckout/aparments/aparment5.jpg",
-                    "/img/realestatecheckout/aparments/aparment6.jpg"];
+        const img = ["/img/realestatecheckout/lands/land1.jpg",
+                    "/img/realestatecheckout/alands/land2.jpg",
+                    "/img/realestatecheckout/lands/land3.jpg"];
         let index = 0;
 
         function next() {

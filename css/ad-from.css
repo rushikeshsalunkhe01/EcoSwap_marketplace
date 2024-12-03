@@ -42,6 +42,11 @@
     border: 1px solid #ccc;
 }
 
+.form-content h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
 
 .style-btn{
     width: 80%;

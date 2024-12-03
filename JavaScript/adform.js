@@ -1,64 +1,49 @@
 
 
-const proTitle = document.getElementById('title').value;
-const proLocation = document.getElementById('location').value;
-const proDiscription = document.getElementById('description').value;
-const proPrice = document.getElementById('price').value;
-const proimg = document.getElementById('image').files[0];
+function postAd() {
+    const proTitle = document.getElementById('title').value;
+    const proLocation = document.getElementById('location').value;
+    const proDiscription = document.getElementById('description').value;
+    const proPrice = document.getElementById('price').value;
+    const proimg = document.getElementById('image').files[0];
 
-const productContainer = document.getElementById('product-main-container');
+    if (proTitle && proLocation && proDiscription && proPrice && proimg) {
+        
+        const imagePath = `./img/${proimg.name}`;
+
+        const productCard = {
+            title: proTitle,
+            location: proLocation,
+            description: proDiscription,
+            price: proPrice,
+            image: imagePath, 
+        };
 
 
-function postAd(){
+        let products = JSON.parse(localStorage.getItem('products')) || [];
 
+        products.push(productCard);
 
-    if(proTitle && proLocation && proDiscription && proPrice && proimg){
+        localStorage.setItem('products', JSON.stringify(products));
 
-        const imageURL = URL.createObjectURL(proimg);
+        
+        URL.revokeObjectURL(imageURL);
 
-      const productCard = `
-        <div class="product-card">
-         <div class="product-image">
-          <img src="${imageURL}" alt="Product Image">
-        </div>
-        <div class="product-details">
-          <h2 class="product-title">${proTitle}</h2>
-          <p class="product-location">
-            <i class="fa fa-map-marker"></i> ${proLocation}
-          </p>
-          <p class="product-description">
-            ${proDiscription}
-          </p>
-          <div class="product-information">
-            <span class="product-price">₹ ${proPrice}</span>
-            <a href="./pages/home-page-products/homeproducts.html">
-            <button class="btn secondary-btn">View Details</button>
-            </a>
-          </div>
-        </div>
-      </div> `;
+        formClear();
 
-      productContainer.innerHTML += productCard;
+        alert("Form submitted successfully!");
+    } else {
 
-      formClear();
-      URL.revokeObjectURL(imageURL);
-    }else{
-        alert("Please Fill All Product Details !!!!")
+        alert("Please fill all product details!");
     }
-  
-    
 }
 
+function formClear() {
 
-
-
-function formClear(){
-
-document.getElementById('title').value = '';
-document.getElementById('location').value = '';
-document.getElementById('description').value = '';
-document.getElementById('price').value = '';
-document.getElementById('image').value = '';
-
+    document.getElementById('title').value = '';
+    document.getElementById('location').value = '';
+    document.getElementById('description').value = '';
+    document.getElementById('price').value = '';
+    document.getElementById('image').value = '';
 }
 

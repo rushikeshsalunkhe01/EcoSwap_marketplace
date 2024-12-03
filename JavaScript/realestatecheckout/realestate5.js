@@ -1,6 +1,6 @@
 const slide = document.getElementById('cover-img');
         const img = ["/img/realestatecheckout/lands/land1.jpg",
-                    "/img/realestatecheckout/alands/land2.jpg",
+                    "/img/realestatecheckout/lands/land2.jpg",
                     "/img/realestatecheckout/lands/land3.jpg"];
         let index = 0;
 

@@ -38,16 +38,27 @@ function postAd(){
         </div>
       </div> `;
 
+      productContainer.innerHTML += productCard;
 
-
+      formClear();
+      URL.revokeObjectURL(imageURL);
+    }else{
+        alert("Please Fill All Product Details !!!!")
     }
+  
+    
 }
 
 
 
 
 function formClear(){
-    
-    
+
+document.getElementById('title').value = '';
+document.getElementById('location').value = '';
+document.getElementById('description').value = '';
+document.getElementById('price').value = '';
+document.getElementById('image').value = '';
+
 }
 

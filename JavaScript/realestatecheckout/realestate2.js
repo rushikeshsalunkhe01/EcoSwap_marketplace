@@ -1,7 +1,7 @@
 const slide = document.getElementById('cover-img');
-        const img = ["/img/realestatecheckout/houses/heritage2.png",
-                    "/img/realestatecheckout/realestatecheckout/villa2.jpeg",
-                    "/img/realestatecheckout/realestatecheckout/oceanview villas.jpeg"];
+        const img = ["/img/realestatecheckout/houses/heritage2.jpg",
+                    "/img/realestatecheckout/houses/heriatage4.jpg",
+                    "/img/realestatecheckout/houses/heritage3.jpg"];
         let index = 0;
 
         function next() {

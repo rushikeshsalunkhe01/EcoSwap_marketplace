@@ -70,8 +70,8 @@ Here's your updated **Project Members and Contributions** section with the corre
 
 ## Project Members and Contributions
 
-- **Siddi Pagire**: Vehicles product checkout pages  
-  GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
+- **Akash Amode**: Main home page, Ad post page  
+  GitHub: [AKashAMode](https://github.com/AKashAMode)
 - **Suraj Ghogare**: Electronics products main page  
   GitHub: [Surajghogare80](https://github.com/Surajghogare80)
 - **Vandita Satarde**: Real Estate products main page  
@@ -80,6 +80,8 @@ Here's your updated **Project Members and Contributions** section with the corre
   GitHub: [VaishnaviKolse](https://github.com/VaishnaviKolse)
 - **Rasika Shete**: Vehicles main page  
   GitHub: [sheterasika](https://github.com/sheterasika/)
+- **Siddi Pagire**: Vehicles product checkout pages  
+  GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
 - **Akash Amode**: Main home page, Ad post page  
   GitHub: [AKashAMode](https://github.com/AKashAMode)
 - **Kiran More**: Product ad form  

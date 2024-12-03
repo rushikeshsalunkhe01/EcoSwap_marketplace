@@ -67,8 +67,8 @@
             </select>
         </div>
         <div class="product-search-container">
-            <input type="text" class="product-search-input">
-            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            <input type="text" class="product-search-input" id="product-search-input">
+            <i class="fa-solid fa-magnifying-glass search-icon" onclick="searchProduct()"></i>
         </div>
         <div class="select-language-contaiiner">
             <select id="select-language">
@@ -78,10 +78,12 @@
         </div>
 
         <div class="product-sell-box">
+          <a href="./pages/post-your-Ad.html">
             <button class="sell-product-btn">
              <i class="fa-solid fa-plus sell-icon"></i>
                 SELL
             </button>
+          </a>
         </div>
 
         <div class="user-profile">
@@ -99,15 +101,11 @@
             </div>
     
             <div class="RealEtate-page">
-                <p class="style-p"><a href="#" class="sub-nav-anchor">RealEtate : Houses<span class="in-product-style">& Apartments </span></a></p>
+                <p class="style-p"><a href="./pages/real-estate.html" class="sub-nav-anchor">RealEtate : Houses<span class="in-product-style">& Apartments </span></a></p>
             </div>
     
             <div class="Electronics-page">
-
-                <p class="style-p"><a href="./pages/electronics.html/mobiles.html">Electronics : Smart Phone & Laptop & Tablet</a></p>
-
-                <p class="style-p"><a href="#" class="sub-nav-anchor">Electronics : Smart Phone<span class="in-product-style"> & Laptop & Tablet</span></a></p>
-
+                <p class="style-p"><a href="./pages/electronics.html/laptops.html" class="sub-nav-anchor">Electronics : Smart Phone<span class="in-product-style"> & Laptop & Tablet</span></a></p>
             </div>
           </div>
     </div>
@@ -147,10 +145,10 @@
   <div class="home-section">
     <h2 class="product-page-heading">Fresh recommendations</h2>
    
-    <div class="product-main-container">
+    <div class="product-main-container" id="product-main-container">
 
 
-    <div class="products-card-container">
+    <div class="products-card-container" id="products-card-container">
         
       <div class="product-card">
         <div class="product-image">
@@ -166,7 +164,9 @@
           </p>
           <div class="product-information">
             <span class="product-price">₹ 899.99</span>
+            <a href="./pages/home-page-products/homeproducts.html">
             <button class="btn secondary-btn">View Details</button>
+            </a>
           </div>
         </div>
       </div>
@@ -342,6 +342,7 @@
   </footer>
 
   <script src="./javascript/app.js"></script>
+  <script src="./javascript/adform.js"></script>
   <script src="https://kit.fontawesome.com/9e04791103.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,19 @@
+
+// side-bar-code
+
+const sidebar = document.getElementById('side-bar');
+const menuIcon = document.getElementById('menu-icon');
+
+function openSideBar() {
+  sidebar.classList.add('active'); 
+  menuIcon.style.display = 'none'; 
+}
+
+function closeIcon() {
+  sidebar.classList.remove('active'); 
+  menuIcon.style.display = 'block';
+}
+
 let allimg  = [
     "../img/car.png",'../img/splenderimg-removebg-preview.png','../img/black-car.png','../img/black-motorcycle.png',
 ];

@@ -82,8 +82,6 @@ Here's your updated **Project Members and Contributions** section with the corre
   GitHub: [sheterasika](https://github.com/sheterasika/)
 - **Siddi Pagire**: Vehicles product checkout pages  
   GitHub: [Miss-Siddhi-Pagire](https://github.com/Miss-Siddhi-Pagire)
-- **Akash Amode**: Main home page, Ad post page  
-  GitHub: [AKashAMode](https://github.com/AKashAMode)
 - **Kiran More**: Product ad form  
   GitHub: [kiranmore2404](https://github.com/kiranmore2404)
 - **Rushikesh Salunke**: Signup and login page  

@@ -63,8 +63,8 @@ The project is organized into structured directories for easy navigation, with s
 - JavaScript functionality
 - Assets (e.g., images)
 
----
-Here's your updated **Project Members and Contributions** section with the correct GitHub links for all the contributors:
+--- 
+**Project Members and Contributions** section with the correct GitHub links for all the contributors:
 
 ---
 
